@@ -2,7 +2,7 @@
 # TESTER STAGE
 #
 
-FROM python:3.8.3-alpine3.12 as tester
+FROM python:3.10.0b2-alpine3.12 as tester
 
 WORKDIR /operator-src
 
@@ -21,7 +21,7 @@ RUN pip install -r requirements-dev.txt
 # BUILDER STAGE
 #
 
-FROM python:3.8.3-alpine3.12 as builder
+FROM python:3.10.0b2-alpine3.12 as builder
 
 WORKDIR /operator-src
 
@@ -49,7 +49,7 @@ RUN cp /tmp/helm/linux-amd64/helm $VIRTUAL_ENV/bin
 # FINAL STAGE
 #
 
-FROM python:3.8.3-alpine3.12
+FROM python:3.10.0b2-alpine3.12
 
 # Copy the virtual environment only since it has all that we need and
 # none of the cruft.
