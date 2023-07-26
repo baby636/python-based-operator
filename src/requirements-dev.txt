@@ -7,7 +7,7 @@
 -e file:.#egg=python-based-operator  # via -r requirements-dev.in
 attrs==19.3.0             # via pytest
 cachetools==4.1.0         # via -c requirements.txt, google-auth
-certifi==2020.6.20        # via -c requirements.txt, kubernetes, requests
+certifi==2023.7.22        # via -c requirements.txt, kubernetes, requests
 chardet==3.0.4            # via -c requirements.txt, requests
 google-auth==1.18.0       # via -c requirements.txt, kubernetes
 idna==2.9                 # via -c requirements.txt, requests
